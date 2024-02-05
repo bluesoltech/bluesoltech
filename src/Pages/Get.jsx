@@ -4,7 +4,7 @@ import Getstarted from '../component/Getstarted'
 const Get = () => {
   return (
     <div>
-        <Getstarted/>
+      <Getstarted />
     </div>
   )
 }

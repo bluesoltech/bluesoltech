@@ -7,145 +7,208 @@ import {
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import logo from "../assets/img/logonew.png";
-
+import { CiFacebook } from "react-icons/ci";
 const Footer = () => {
+  .0
   return (
-    <footer className="px-4 divide-y bg-white dark:text-gray-100">
-      <div className="container flex text-black flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-        <div className="lg:w-1/3 flex justify-start">
-          <a rel="noopener noreferrer" href="/">
-            <div className="flex items-center justify-center rounded-full">
-              <img className="w-10" src={logo} />
-            </div>
-          </a>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-sm gap-3 lg:w-2/3">
-          <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-800 font-bold  inline-block">
+    <footer className="px-4 divide-y bg-[#0F0E0E] text-white dark:text-gray-100 border-t-2">
+      <div className="container flex text-black flex-col justify-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 text-sm gap-3 lg:w-full ">
+          <div className="space-y-3  m-3 p-3">
+            <h3 className="tracki uppercase text-white font-bold inline-block">
               {" "}
-              QUICK LINK:
+              Services
             </h3>
             <ul className="space-y-1">
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  Company History
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="" className="text-gray-500 " >
+                  Digital Marketing
                 </a>
               </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Web Development
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  SMM Services
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  SEO Services
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  SMO Services
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base">
+                <a rel="" href="#" className="text-gray-500">
+                  PPC Services
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3 m-3 p-3">
+            <h3 className="tracki uppercase text-white font-bold inline-block">
+              Packages
+            </h3>
+            <ul className="space-y-1">
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  SEO Packages
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  PPC Packages
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  SMM Packages
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Facebook Packages
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base">
+                <a rel="" href="#" className="text-gray-500">
+                  YouTube Packages
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3 m-3 p-3">
+            <h3 className="tracki uppercase text-white font-bold inline-block">
+              Learning
+            </h3>
+            <ul className="space-y-1">
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Graphic Ideas
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Google Ads Tips
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  SEO Resources
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Social Media Tips
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base">
+                <a rel="" href="#" className="text-gray-500">
+                  Website Tips
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3 m-3 p-3">
+            <h3 className="tracki uppercase text-white font-bold inline-block">
+              Policies
+            </h3>
+            <ul className="space-y-1">
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Partner
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Privacy Policy
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base">
+                <a rel="" href="#" className="text-gray-500">
+                  Terms & Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3 m-3 p-3">
+            <h3 className="tracki uppercase text-white font-bold inline-block">
+              Agency
+            </h3>
+            <ul className="space-y-1">
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
                   About Us
                 </a>
               </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  Blog
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Portfolio
                 </a>
               </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  <Link to="services">Services</Link>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Career
+                </a>
+              </li>
+              <li className="p-1 transition-all duration-300 text-base">
+                <a rel="" href="#" className="text-gray-500">
+                  Reviews
                 </a>
               </li>
             </ul>
           </div>
-          <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-800 font-bold inline-block">
-              OUR SERVICES:
+          <div className="space-y-3 m-3 p-3">
+            <h3 className="tracki uppercase text-white font-bold inline-block">
+              Contact
             </h3>
             <ul className="space-y-1">
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  <Link to="services">Web Development</Link>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Contact Us
                 </a>
               </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  <Link to="services">Apps Development</Link>
+              <li className="p-1 transition-all duration-300 text-base border-gray-500 border-b-2">
+                <a rel="" href="#" className="text-gray-500">
+                  Request Proposal
                 </a>
               </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  <Link to="services">Graphic Designer</Link>
-                </a>
-              </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  <Link to="services">Social media Marketing</Link>
-                </a>
-              </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  <Link to="services">Event Manager</Link>
-                </a>
+              <li className="p-1 transition-all duration-300 text-base">
+                <div className="flex bg-white justify-center item-center h-[70px] w-[70px]  rounded-full">
+                  <img className="w-10" src={logo} />
+                </div>
               </li>
             </ul>
-          </div>
-          <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-800 font-bold inline-block">
-              CONTACT INFO:
-            </h3>
-            <ul className="space-y-1">
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  +91 92746 82710
-                </a>
-              </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  ask@bluesoltech.in
-                </a>
-              </li>
-              <li className="p-1 transition-all duration-300 hover:text-blue-800 text-base">
-                <a rel="" href="#">
-                  102, Solaris Business Hub, Opp. The National Higher Secondary
-                  School, Bhuyangdev, Ahmedabad, Gujarat 380013.
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-3">
-            <h3 className="tracki uppercase dark:text-gray-800 font-bold inline-block">
-              Social media:
-            </h3>
-            <div className="flex justify-start space-x-3">
-              <a
-                rel=""
-                href="#"
-                title="Facebook"
-                className="flex items-center p-1"
-              >
-                <TiSocialTwitter className="text-2xl" />
-              </a>
-              <a
-                rel=""
-                href="#"
-                title="Twitter"
-                className="flex items-center p-1"
-              >
-                <TiSocialYoutube className="text-2xl" />
-              </a>
-              <a
-                rel=""
-                href="#"
-                title="Instagram"
-                className="flex items-center p-1"
-              >
-                <TiSocialLinkedin className="text-2xl" />
-              </a>
-              <a
-                rel=""
-                href="#"
-                title="Youtube"
-                className="flex items-center p-1"
-              >
-                <TiSocialInstagram className="text-2xl" />
-              </a>
-            </div>
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center dark:text-gray-400">
-        © 2023 Blue Soltech. All rights reserved.
+      <div className="py-6 text-sm text-center dark:text-gray-400 flex flex-col items-center">
+        <div className="mb-2 flex">
+          <div className="m-2">
+            <TiSocialInstagram size={30} />
+          </div>
+          <div className="m-2">
+            <TiSocialTwitter size={30} />
+          </div>
+          <div className="m-2">
+            <TiSocialLinkedin size={30} />
+          </div>
+          <div className="m-2">
+            <TiSocialTwitter size={30} />
+          </div>
+          <div className="m-2">
+            <CiFacebook size={30} />
+          </div>
+        </div>
+        <p>All Rights Reserved By Blue Soltech</p>
+        <p>(We only use and operate bluesoltech.com & bluesoltech.in. Beware of other similar domains.)</p>
       </div>
     </footer>
   );

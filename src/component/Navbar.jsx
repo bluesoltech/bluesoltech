@@ -50,8 +50,8 @@ const Navbar = () => {
 
                     <Link
                       className="mr-4 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white"
-                      to="/"
-                      onClick={scrollToAbout}
+                      to="/about"
+                      // onClick={scrollToAbout}
                     >
                       About
                     </Link>
