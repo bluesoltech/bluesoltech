@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'tailwindcss/tailwind.css';
 import { motion } from "framer-motion";
-import  Happy_client from "../../component/About/Happy_client.jsx";
+import Happy_client from "../../component/About/Happy_client.jsx";
 
 
 
@@ -60,88 +60,36 @@ const About = (index) => {
                     </motion.div>
                 </div>
                 <div className='md:flex flex-row mt-9 justify-around'>
-                    <motion.div
-                        className="card"
-                        initial={{
-                            opacity: 0,
-                            // if odd index card, slide from right instead of left
-                            x: index % 2 === 0 ? 50 : -50,
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            x: 0, // Slide in to its original position
-                            transition: {
-                                duration: 1, // Animation duration
-                            },
-                        }}
-                        viewport={{ once: true }}
-                    >
-                        <div className=''>
-                            <ul className=' text-gray-500'>
-                                <li>✔️ Website Design & Development</li>
-                                <li>✔️ Online Reputation Management</li>
-                                <li>✔️ Search Engine Optimization</li>
-                                <li>✔️ Content Marketing</li>
-                            </ul>
-                            <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Request Free Audit!</button>
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        className="card"
-                        initial={{
-                            opacity: 0,
-                            // if odd index card, slide from right instead of left
-                            x: index % 2 === 0 ? -50 : 50,
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            x: 0, // Slide in to its original position
-                            transition: {
-                                duration: 1, // Animation duration
-                            },
-                        }}
-                        viewport={{ once: true }}
-                    >
-                        <div className=''>
-                            <ul className='text-gray-500'>
-                                <li>✔️ Social Media Optimization</li>
-                                <li>✔️ Email Marketing</li>
-                                <li>✔️ Logo Design</li>
-                                <li>✔️ Pay-Per-Click (PPC)/Google Ads</li>
-                            </ul>
-                            <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Our Packages</button>
-                        </div>
-                    </motion.div>
+                    <div className=''>
+                        <ul className=' text-gray-500'>
+                            <li>✔️ Website Design & Development</li>
+                            <li>✔️ Online Reputation Management</li>
+                            <li>✔️ Search Engine Optimization</li>
+                            <li>✔️ Content Marketing</li>
+                        </ul>
+                        <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Request Free Audit!</button>
+                    </div>
+                    <div className=''>
+                        <ul className='text-gray-500'>
+                            <li>✔️ Social Media Optimization</li>
+                            <li>✔️ Email Marketing</li>
+                            <li>✔️ Logo Design</li>
+                            <li>✔️ Pay-Per-Click (PPC)/Google Ads</li>
+                        </ul>
+                        <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Our Packages</button>
+                    </div>
                 </div>
 
                 <div className=''>
-                    <motion.div
-                        className="card"
-                        initial={{
-                            opacity: 0,
-                            // if odd index card, slide from right instead of left
-                            y: index % 2 === 0 ? -50 : 50,
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            y: 0, // Slide in to its original position
-                            transition: {
-                                duration: 1, // Animation duration
-                            },
-                        }}
-                        viewport={{ once: true }}
-                    >
-
-                        <h1 className='text-white text-4xl mt-4 font-bold'>About us </h1>
-                        <p className='text-gray-500 mt-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into
-                            electronic typesetting, remaining essentially unchanged. It was popularised in
-                            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker
-                            including versions of Lorem Ipsum.</p>
-                    </motion.div>
+                    <h1 className='text-white text-4xl mt-4 font-bold'>About us </h1>
+                    <p className='text-gray-500 mt-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged. It was popularised in
+                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.</p>
                 </div>
                 <div className='md:flex flex-row mt-9 justify-around'>
                     <div className='w-[50%]'>

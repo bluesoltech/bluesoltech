@@ -8,6 +8,7 @@ import Get from "../Pages/Get";
 import About from "../Pages/About/About";
 import Career from "../Pages/About/Career";
 import Reviews from "../Pages/About/Reviews";
+import Degital_marketing from "../Pages/About/Degital_marketing";
 
 const Routers = () => {
   return (
@@ -20,7 +21,7 @@ const Routers = () => {
       <Route path="/about" element={<About />} />
       <Route path="/career" element={<Career />} />
       <Route path="/reviews" element={<Reviews />} />
-      <Route path="/degital_marketing" element={<degital_marketing />} />
+      <Route path="/degital_marketing" element={<Degital_marketing />} />
     </Routes>
   );
 };
