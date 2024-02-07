@@ -4,8 +4,12 @@ import Slider from "react-slick";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'tailwindcss/tailwind.css';
+import { motion } from "framer-motion";
+import  Happy_client from "../../component/About/Happy_client.jsx";
 
-const About = () => {
+
+
+const About = (index) => {
     const slides = [
         {
             name: 'Jane Smith',
@@ -28,88 +32,116 @@ const About = () => {
             caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         },
     ];
-    const client1 = [
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        },
-        {
-            tittle: 'SEO',
-            content: 'consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        },
-        {
-            tittle: 'SEO',
-            content: 'consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        }
-    ]
-    const client2 = [
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        },
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        },
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        }
-    ]
-    const client3 = [
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        },
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        },
-        {
-            tittle: 'SEO',
-            content: ' consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, '
-        }
-    ]
+
     return (
         <div className='bg-[#0F0E0E] p-20 items-center '>
-            <div className='md:w-[1200px] w-auto mt-4 mx-auto'>
+            <div className='md:w-[80%] w-auto mt-4 mx-auto'>
                 <div className='item-center text-center'>
-                    <h1 className='text-white font-black text-5xl'>Online Marketing Agency India</h1>
-                    <p className='text-gray-500 mt-10 justify-center text-center items-center'> We are one of the finest Web Development and Digital Marketing Company In India renowned for using the latest online marketing
-                        techniques and the most sophisticated tools that help your business get a digital edge. Beat your competitors and outshine the crowd
-                        with ‘RankOn Technologies’ by your side for all your Digital Marketing needs.</p>
+                    <motion.div
+                        className="card"
+                        initial={{
+                            opacity: 0,
+                            // if odd index card, slide from right instead of left
+                            y: index % 2 === 0 ? -50 : 50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0, // Slide in to its original position
+                            transition: {
+                                duration: 1, // Animation duration
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    >
+                        <h1 className='text-white font-black text-5xl'>Online Marketing Agency India</h1>
+                        <p className='text-gray-500 mt-10 justify-center text-center items-center'> We are one of the finest Web Development and Digital Marketing Company In India renowned for using the latest online marketing
+                            techniques and the most sophisticated tools that help your business get a digital edge. Beat your competitors and outshine the crowd
+                            with ‘RankOn Technologies’ by your side for all your Digital Marketing needs.</p>
+                    </motion.div>
                 </div>
                 <div className='md:flex flex-row mt-9 justify-around'>
-                    <div className=''>
-                        <ul className=' text-gray-500'>
-                            <li>✔️ Website Design & Development</li>
-                            <li>✔️ Online Reputation Management</li>
-                            <li>✔️ Search Engine Optimization</li>
-                            <li>✔️ Content Marketing</li>
-                        </ul>
-                        <button className='bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white py-2 px-4 rounded-md m-4 p-2'>Request Free Audit!</button>
-                    </div>
-                    <div className=''>
-                        <ul className='text-gray-500'>
-                            <li>✔️ Social Media Optimization</li>
-                            <li>✔️ Email Marketing</li>
-                            <li>✔️ Logo Design</li>
-                            <li>✔️ Pay-Per-Click (PPC)/Google Ads</li>
-                        </ul>
-                        <button className='bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 text-white py-2 px-4 rounded-md m-4'>Our Packages</button>
-                    </div>
+                    <motion.div
+                        className="card"
+                        initial={{
+                            opacity: 0,
+                            // if odd index card, slide from right instead of left
+                            x: index % 2 === 0 ? 50 : -50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0, // Slide in to its original position
+                            transition: {
+                                duration: 1, // Animation duration
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    >
+                        <div className=''>
+                            <ul className=' text-gray-500'>
+                                <li>✔️ Website Design & Development</li>
+                                <li>✔️ Online Reputation Management</li>
+                                <li>✔️ Search Engine Optimization</li>
+                                <li>✔️ Content Marketing</li>
+                            </ul>
+                            <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Request Free Audit!</button>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="card"
+                        initial={{
+                            opacity: 0,
+                            // if odd index card, slide from right instead of left
+                            x: index % 2 === 0 ? -50 : 50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0, // Slide in to its original position
+                            transition: {
+                                duration: 1, // Animation duration
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    >
+                        <div className=''>
+                            <ul className='text-gray-500'>
+                                <li>✔️ Social Media Optimization</li>
+                                <li>✔️ Email Marketing</li>
+                                <li>✔️ Logo Design</li>
+                                <li>✔️ Pay-Per-Click (PPC)/Google Ads</li>
+                            </ul>
+                            <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Our Packages</button>
+                        </div>
+                    </motion.div>
                 </div>
 
                 <div className=''>
-                    <h1 className='text-white text-4xl mt-4 font-bold'>About us </h1>
-                    <p className='text-gray-500 mt-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged. It was popularised in
-                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker
-                        including versions of Lorem Ipsum.</p>
+                    <motion.div
+                        className="card"
+                        initial={{
+                            opacity: 0,
+                            // if odd index card, slide from right instead of left
+                            y: index % 2 === 0 ? -50 : 50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0, // Slide in to its original position
+                            transition: {
+                                duration: 1, // Animation duration
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    >
+
+                        <h1 className='text-white text-4xl mt-4 font-bold'>About us </h1>
+                        <p className='text-gray-500 mt-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised in
+                            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker
+                            including versions of Lorem Ipsum.</p>
+                    </motion.div>
                 </div>
                 <div className='md:flex flex-row mt-9 justify-around'>
                     <div className='w-[50%]'>
@@ -164,7 +196,24 @@ const About = () => {
                     </div>
                 </div>
                 <div className='text-white mt-14'>
-                    <h1 className='text-center font-bold text-4xl'>Our Happy Clients</h1>
+                    <motion.div
+                        className="card"
+                        initial={{
+                            opacity: 0,
+                            // if odd index card, slide from right instead of left
+                            y: index % 2 === 0 ? -50 : 50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0, // Slide in to its original position
+                            transition: {
+                                duration: 1, // Animation duration
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    >
+                        <h1 className='text-center font-bold text-4xl'>Our Happy Clients</h1>
+                    </motion.div>
                     <div className='w-auto h-[500px] bg-white mt-14'>
                         <img src="" alt='no_video' />
                     </div>
@@ -195,57 +244,10 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className='text-white mt-14'>
-                    <h1 className='text-center font-bold text-4xl'>Our Happy Clients</h1>
-                    <div className='flex-row md:flex mt-7'>
-                        <div className='bg-black w-[400px] h-[700px] m-2'>
-                            <Carousel showThumbs={false} showStatus={false} showArrows={false}>
-                                {client1.map((client1, index) => (
-                                    <div key={index} className=" rounded-md ">
-                                        <div className='bg-gray-500 h-[50px] rounded-md flex items-center justify-center'>
-                                            <p className="text-white text-center font-bold">{client1.tittle}</p>
-                                        </div>
-                                        <div className='p-6'>
-                                            <p className="text-gray-500 mt-4 text-center mb-4">{client1.content}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </Carousel>
-                        </div>
-                        <div className='bg-black w-[400px] h-[700px] m-2'>
-                            <Carousel showThumbs={false} showStatus={false} showArrows={false}>
-                                {client2.map((client2, index) => (
-                                    <div key={index} className=" rounded-md ">
-                                        <div className='bg-gray-500 h-[50px] rounded-md flex items-center justify-center'>
-                                            <p className="text-white text-center font-bold">{client2.tittle}</p>
-                                        </div>
-                                        <div className='p-6'>
-                                            <p className="text-gray-500 mt-4 text-center mb-4">{client2.content}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </Carousel>
-                            </div>
-                            <div className='bg-black w-[400px] h-[700px] m-2'>
-                                <Carousel showThumbs={false} showStatus={false} showArrows={false}>
-                                    {client3.map((client3, index) => (
-                                        <div key={index} className=" rounded-md ">
-                                            <div className='bg-gray-500 h-[50px] rounded-md flex items-center justify-center'>
-                                                <p className="text-white text-center font-bold">{client3.tittle}</p>
-                                            </div>
-                                            <div className='p-6'>
-                                                <p className="text-gray-500 mt-4 text-center mb-4">{client3.content}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </Carousel>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <Happy_client />
             </div>
-            )
+        </div>
+    )
 }
 
-            export default About
+export default About
