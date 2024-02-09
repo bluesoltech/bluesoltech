@@ -49,55 +49,55 @@ const Logoslider = () => {
       blurBoderColor={"#fff"}
     >
       <Slider.Slide>
-        <FaReact className="text-5xl" />
+        <FaReact className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaNodeJs className="text-5xl" />
+        <FaNodeJs className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaAngular className="text-5xl" />
+        <FaAngular className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaHtml5 className="text-5xl" />
+        <FaHtml5 className="text-5xl text-white"/>
       </Slider.Slide>
       <Slider.Slide>
-        <FaCss3 className="text-5xl" />
+        <FaCss3 className="text-5xl text-white"/>
       </Slider.Slide>
       <Slider.Slide>
-        <FaVuejs className="text-5xl" />
+        <FaVuejs className="text-5xl text-white"/>
       </Slider.Slide>
       <Slider.Slide>
-        <FaGitAlt className="text-5xl" />
+        <FaGitAlt className="text-5xl text-white"/>
       </Slider.Slide>
       <Slider.Slide>
-        <FaPython className="text-5xl" />
+        <FaPython className="text-5xl text-white"/>
       </Slider.Slide>
       <Slider.Slide>
-        <FaAws className="text-5xl" />
+        <FaAws className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaFigma className="text-5xl" />
+        <FaFigma className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiAdobepremierepro className="text-5xl" />
+        <SiAdobepremierepro className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiAdobephotoshop className="text-5xl" />
+        <SiAdobephotoshop className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiAdobeillustrator className="text-5xl" />
+        <SiAdobeillustrator className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiAdobexd className="text-5xl" />
+        <SiAdobexd className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiAdobeaftereffects className="text-5xl" />
+        <SiAdobeaftereffects className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiCanva className="text-5xl" />
+        <SiCanva className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <SiWebflow className="text-5xl" />
+        <SiWebflow className="text-5xl text-white" />
       </Slider.Slide>
     </Slider>
   );

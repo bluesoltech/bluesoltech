@@ -11,6 +11,9 @@ import { Bs2Circle } from "react-icons/bs";
 import { Bs3Circle } from "react-icons/bs";
 import { Bs4Circle } from "react-icons/bs";
 import Happy_client from '../../component/About/Happy_client';
+import Services_first from '../../component/Services_first';
+import Video1 from '../../component/Video1';
+import Request from '../../component/Request';
 
 
 
@@ -111,12 +114,12 @@ const Degital_marketing = () => {
   return (
     <div className='bg-[#0F0E0E] p-20 items-center'>
       <div className='md:w-[80%] w-auto mt-4 mx-auto'>
-        <div className='md:flex flex-row mt-9 justify-around'>
-          <div className='w-[50%]'>
+        <div className='xl:flex flex-row mt-9 justify-around'>
+          <div className='xl:w-[50%] w-full'>
             <img src={img1} className='' />
           </div>
-          <div className='w-[50%]'>
-            <div class='flex bg-white text-black w-[699px] h-[50px] justify-between items-center p-2 rounded-md'>
+          <div className='xl:w-[50%] w-full'>
+            <div class='xl:flex flex-row bg-white text-black w-[699px] h-[50px] justify-between items-center p-2 rounded-md'>
               <div>
                 <p class='font-bold justify-center align-middle'>Digital Marketing Training In India</p>
               </div>
@@ -124,10 +127,10 @@ const Degital_marketing = () => {
                 <button class='bg-black text-white font-bold py-2 px-4 rounded-md'>Apply Now</button>
               </div>
             </div>
-            <p className='items-end justify-end text-gray-500 text-end m-2'>Digital Marketing Training</p>
-            <h2 className='font-bold text-white text-2xl text-end m-2'>Best Digital Marketing Training In word</h2>
-            <p className='items-end justify-end text-gray-500 text-end m-2'>Digital Marketing Course Duration – 2 Months</p>
-            <h2 className='font-bold text-white text-2xl text-end m-2'>Limited Time Offer Rs.  25,000</h2>
+            <p className='items-start xl:items-end justify-start xl:justify-end text-gray-500 text-start xl:text-end m-2'>Digital Marketing Training</p>
+            <h2 className='font-bold items-start xl:items-end justify-start xl:justify-end text-white text-start xl:text-end m-2'>Best Digital Marketing Training In word</h2>
+            <p className='items-start xl:items-end justify-start xl:justify-end text-gray-500 text-start xl:text-end m-2'>Digital Marketing Course Duration – 2 Months</p>
+            <h2 className='font-bold items-start xl:items-end justify-start xl:justify-end text-white text-start xl:text-end m-2'>Limited Time Offer Rs.  25,000</h2>
             <div className='md:flex flex-row mt-9 justify-end '>
               <div className='p-3'>
                 <ul className=' text-gray-500'>
@@ -150,15 +153,16 @@ const Degital_marketing = () => {
         </div>
         <div className='mt-[100px]'>
           <h1 className='text-white text-4xl mt-4 font-bold text-center'>Digital Marketing Training In Lucknow</h1>
-        </div>
-        <div className='md:flex flex-row mt-9 justify-around'>
-          <div className='w-[30%]'>
-            <img src={img1} className='' />
-          </div>
-          <div className='w-[50%]'>
-            <p className='text-gray-500 mt-7'>Digital Marketing industry see new changes almost every week so learn from working professionals and understand the concept by working on live projects.</p>
-            <p className='text-gray-500 mt-10'>Are you a student and have interest in learning digital marketing to get a job in digital marketing industry? Blue soltech is a leading digital marketing company in Lucknow offering job oriented digital marketing training in Lucknow.</p>
-            <p className='text-gray-500 mt-8'>We offer latest digital marketing courses so you learn latest digital marketing skills to secure a bright future in digital marketing industry.</p>
+
+          <div className='md:flex flex-row mt-9 justify-around'>
+            <div className='w-[30%]'>
+              <img src={img1} className='' />
+            </div>
+            <div className='w-[50%]'>
+              <p className='text-gray-500 mt-7'>Digital Marketing industry see new changes almost every week so learn from working professionals and understand the concept by working on live projects.</p>
+              <p className='text-gray-500 mt-10'>Are you a student and have interest in learning digital marketing to get a job in digital marketing industry? Blue soltech is a leading digital marketing company in Lucknow offering job oriented digital marketing training in Lucknow.</p>
+              <p className='text-gray-500 mt-8'>We offer latest digital marketing courses so you learn latest digital marketing skills to secure a bright future in digital marketing industry.</p>
+            </div>
           </div>
         </div>
         <div className=''>
@@ -167,7 +171,7 @@ const Degital_marketing = () => {
         </div>
         <div className='mt-[100px]'>
           <h1 className='text-white text-4xl mt-4 font-bold text-center'>Digital Marketing Classes Lucknow</h1>
-          <div className=' flex flex-col xl:flex-row justify-between mt-10'>
+          <div className=' flex-row xl:flex justify-between mt-10'>
             <div className='bg-black w-[400px] h-[400px] flex flex-col justify-center items-center shadow-2xl m-4'>
               <div className='h-[200px] w-[300px] flex justify-center items-center p-4'>
                 <img src={img1} alt='no_img' className='w-full h-auto' />
@@ -257,116 +261,9 @@ const Degital_marketing = () => {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-center mt-14'>
-          <div className='bg-black w-[1300px] h-[180px]'>
-            <h1 className='font-bold text-white text-3xl p-4'>Would You Like To Discuss Your Project With Our Experts?</h1>
-            <div className='flex xl:flex-row justify-between items-center'>
-              <div>
-                <FcServices size={70} />
-              </div>
-              <div>
-                <p className='font-bold text-gray-500'>Send Your Project Details By Clicking On Get In Touch And One Of Our Team Members Will Call You Soon!</p>
-              </div>
-              <div>
-                <button className='bg-white text-black font-bold py-2 px-4 rounded-full m-4'>Request Proposal</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='mt-[100px]'>
-          <h1 className='text-white text-4xl mt-4 font-bold text-center'>What Our Clients Say About Our Services?</h1>
-          <div className='flex-row  xl:flex mt-12  xl:justify-between'>
-            <div className='bg-white w-[300px] h-[300px] m-4'>
-              <img src='' alt='no-img'></img>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] m-4'>
-              <img src='' alt='no-img'></img>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] m-4'>
-              <img src='' alt='no-img'></img>
-            </div>
-          </div>
-        </div>
-        {/* <div className='mt-[100px]'>
-          <h1 className='text-white text-4xl mt-4 font-bold text-center'>Our Certificate</h1>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 text-sm mt-11 w-full'>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-            <div className='bg-white w-[300px] h-[300px] mx-auto m-4 overflow-hidden'>
-              <div className='relative w-full h-full'>
-                <img src={img1} alt='no-img' className='absolute inset-0 w-full h-full object-cover transition duration-300 transform scale-100 hover:scale-110'></img>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        <Request tittle="Would You Like To Discuss Your Project With Our Experts?" content="Send Your Project Details By Clicking On Get In Touch And One Of Our Team Members Will Call You Soon!" />
+        <Video1 />
+        {/* <Request tittle="hgijkhbjkbhuitgy"/> */}
         <div className='mt-[100px]'>
           <h1 className='text-white text-4xl mt-4 font-bold text-center'>Our Digital Marketing Trainers In Lucknow</h1>
           <div className='flex-row xl:flex mt-10 justify-around'>
@@ -737,7 +634,6 @@ const Degital_marketing = () => {
               <h2 className='font-bold text-gray-500 text-center mt-5'>Working professionals who want to learn new skills.</h2>
             </div>
           </div>
-
           <p className='text-gray-500 mt-4'>After Completion of the course you will get the competition certification of Blue soltech Private Limited.
             Feel free to contact us in case of any queries.</p>
           <p className='text-gray-500 font-bold mt-4'>If you are looking for a reputed and experienced digital marketing institute in word then look no further than Blue Soltech in Lucknow. We have expert certified professionals in SEO, Google Ads, Social Media marketing who can teach you complete digital marketing course for better career opportunity.</p>
@@ -746,7 +642,7 @@ const Degital_marketing = () => {
             <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Our Packages</button>
           </div>
         </div>
-        <Happy_client/>
+        <Happy_client />
       </div>
 
     </div>

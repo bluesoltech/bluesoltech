@@ -9,6 +9,8 @@ import About from "../Pages/About/About";
 import Career from "../Pages/About/Career";
 import Reviews from "../Pages/About/Reviews";
 import Degital_marketing from "../Pages/About/Degital_marketing";
+import Local_business_seo from "../Pages/Services/SEO/Local_business_seo";
+import Technical_seo from "../Pages/Services/SEO/Technical_seo";
 
 const Routers = () => {
   return (
@@ -22,6 +24,8 @@ const Routers = () => {
       <Route path="/career" element={<Career />} />
       <Route path="/reviews" element={<Reviews />} />
       <Route path="/degital_marketing" element={<Degital_marketing />} />
+      <Route path="local_business_seo" element={<Local_business_seo />} />
+      <Route path="technical_seo" element={<Technical_seo />} />
     </Routes>
   );
 };
