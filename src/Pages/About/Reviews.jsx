@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Happy_client from '../../component/About/Happy_client';
 import img1 from '../../assets/img/review.png'
+import Slider from "react-slick";
 
 
 const Reviews = () => {
@@ -155,42 +156,158 @@ const Reviews = () => {
   const nextGoogelIndex = () => {
     setCurrentGoogelIndex((prevIndex) => (prevIndex + 1) % Googel.length);
   };
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
+    arrows: false
+  };
+  var settings1 = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
+    arrows: false
+  };
   return (
     <div className='bg-[#0F0E0E] p-20 items-center'>
       <div className='md:w-[80%] w-auto mt-4 mx-auto'>
         <div className='item-center text-center'>
-          <h1 className='text-white font-black text-5xl'>Blue soltech  Reviews</h1>
-          <p className='text-white mt-6 justify-center text-center items-center text-3xl'>Upwork Reviews</p>
+          <h1 className='text-gray-300 font-black text-5xl'>Blue soltech  Reviews</h1>
+          <p className='text-gray-300 mt-6 justify-center text-center items-center text-3xl'>Upwork Reviews</p>
         </div>
         <div className='mt-14'>
-          <Carousel showThumbs={false} showStatus={false} showArrows={false}>
-            {Upwork.map((upwork, index) => (
-              <div key={index} className="xl:flex flex-row justify-around mb-10 ">
-                {/* First Box */}
-                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[600px]">
-
+          <div className="slider-container justify-center items-center">
+            <Slider {...settings}>
+              <div className="">
+                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[90%] xl:w-[500px]">
                   <div className='p-6'>
-                    <p className="text-gray-500 mt-4 text-center mb-4">{upwork.content}</p>
+                    <h1 className='text-center font-bold text-2xl text-gray-300 mb-5'>Completed Successfully</h1>
+                    <p className="text-gray-500 mt-4 text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos hic suscipit est eos distinctio fugiat, enim quam facilis voluptatibus?</p>
                   </div>
                   <div className=' flex items-center justify-center'>
                     ⭐ ⭐ ⭐ ⭐ ⭐
                   </div>
                 </div>
-                {/* Second Box */}
-                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[600px]">
+              </div>
+              <div className="">
+                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[90%] xl:w-[500px]">
                   <div className='p-6'>
-                    <p className="text-gray-500 mt-4 text-center mb-4">{Upwork[(index + 1) % Upwork.length].content}</p>
+                    <h1 className='text-center font-bold text-2xl text-gray-300 mb-5'>Completed Successfully</h1>
+                    <p className="text-gray-500 mt-4 text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos hic suscipit est eos distinctio fugiat, enim quam facilis voluptatibus?</p>
                   </div>
-                  <div className=' flex items-center justify-center my-2'>
+                  <div className=' flex items-center justify-center'>
                     ⭐ ⭐ ⭐ ⭐ ⭐
                   </div>
                 </div>
               </div>
-            ))}
-          </Carousel>
+              <div className="">
+                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[90%] xl:w-[500px]">
+                  <div className='p-6'>
+                    <h1 className='text-center font-bold text-2xl text-gray-300 mb-5'>Completed Successfully</h1>
+                    <p className="text-gray-500 mt-4 text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos hic suscipit est eos distinctio fugiat, enim quam facilis voluptatibus?</p>
+                  </div>
+                  <div className=' flex items-center justify-center'>
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[90%] xl:w-[500px]">
+                  <div className='p-6'>
+                    <h1 className='text-center font-bold text-2xl text-gray-300 mb-5'>Completed Successfully</h1>
+                    <p className="text-gray-500 mt-4 text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos hic suscipit est eos distinctio fugiat, enim quam facilis voluptatibus?</p>
+                  </div>
+                  <div className=' flex items-center justify-center'>
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[90%] xl:w-[500px]">
+                  <div className='p-6'>
+                    <h1 className='text-center font-bold text-2xl text-gray-300 mb-5'>Completed Successfully</h1>
+                    <p className="text-gray-500 mt-4 text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos hic suscipit est eos distinctio fugiat, enim quam facilis voluptatibus?</p>
+                  </div>
+                  <div className=' flex items-center justify-center'>
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <div className="rounded-md m-2 border border-gray-500 h-[300px] w-[90%] xl:w-[500px]">
+                  <div className='p-6'>
+                    <h1 className='text-center font-bold text-2xl text-gray-300 mb-5'>Completed Successfully</h1>
+                    <p className="text-gray-500 mt-4 text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos hic suscipit est eos distinctio fugiat, enim quam facilis voluptatibus?</p>
+                  </div>
+                  <div className=' flex items-center justify-center'>
+                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  </div>
+                </div>
+              </div>
+
+            </Slider>
+          </div>
         </div>
-        <div className='text-white mt-14'>
-          <h1 className='text-center font-bold text-4xl'>Clutch Reviews</h1>
+        <div className='text-gray-300 mt-14'>
+          <h1 className='text-center font-bold text-3xl'>Clutch Reviews</h1>
           <Carousel showThumbs={false} showStatus={false} showArrows={false}>
             {slides.map((slide, index) => (
               <div key={index} className="p-8 rounded-md ">
@@ -204,61 +321,96 @@ const Reviews = () => {
         <Happy_client />
 
         <div className='mt-14'>
-          <h1 className='text-center font-bold text-4xl text-white mb-7'>Google Reviews</h1>
-          <p className='font-bold text-white text-center'>Google rating score:4.8 of 5,based on 112 reviews.</p>
+          <h1 className='text-center font-bold text-3xl text-gray-300 mb-7'>Google Reviews</h1>
+          <p className='font-bold text-gray-300 text-center'>Google rating score:4.8 of 5,based on 112 reviews.</p>
           <p className='text-center mt-4 mb-4'> ⭐ ⭐ ⭐ ⭐ ⭐ </p>
-          <Carousel showThumbs={false} showStatus={false} showArrows={false}>
-            {Googel.map((item, index) => (
-              <div key={index} className="xl:flex flex-row xl:justify-around justify-center items-center mb-10 ">
-                {/* First Box */}
-                <div className="rounded-md m-2 border border-gray-500 h-auto w-[500px]">
-                  <div className='p-6'>
-                    <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
-                      <img src={item.imageSrc[0].imageSrc.img1} className='!h-[60px] !w-[60px] rounded-full' alt="" />
-                    </div>
-                    <div>
-                      <p className="text-gray-500 mt-4 text-center mb-4 font-bold">{item.name[0].name}</p>
-                    </div>
-                    <p className="text-gray-500 mt-4 text-center mb-4">{item.contents[0].content}</p>
+
+          <Slider {...settings1}>
+            <div className="">
+              <div className="rounded-md m-2 border border-gray-500 h-auto w-[300px]">
+                <div className='p-6'>
+                  <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
+                    <img src={img1} className='!h-[60px] !w-[60px] rounded-full' alt="no" />
                   </div>
-                  <div className=' flex items-center justify-center my-2'>
-                    ⭐ ⭐ ⭐ ⭐ ⭐
+                  <div>
+                    <p className="text-gray-500 mt-4 text-center mb-4 font-bold">Rinku Sharma</p>
                   </div>
+                  <p className="text-gray-500 mt-4 text-center mb-4">Outstanding IT services! Blue Soltech transformed our outdated systems into a seamless digital infrastructure. Their expertise and dedication are unmatched.</p>
                 </div>
-                {/* Second Box */}
-                <div className="rounded-md m-2 border border-gray-500 h-auto w-[500px]">
-                  <div className='p-6'>
-                    <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
-                      <img src={item.imageSrc[1].imageSrc.img1} className='!h-[60px] !w-[60px] rounded-full' alt="" />
-                    </div>
-                    <div>
-                      <p className="text-gray-500 mt-4 text-center mb-4 font-bold">{item.name[1].name}</p>
-                    </div>
-                    <p className="text-gray-500 mt-4 text-center mb-4">{item.contents[1].content}</p>
-                  </div>
-                  <div className=' flex items-center justify-center my-2'>
-                    ⭐ ⭐ ⭐ ⭐ ⭐
-                  </div>
-                </div>
-                <div className="rounded-md m-2 border border-gray-500 h-auto w-[500px]">
-                  <div className='p-6'>
-                    <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
-                      <img src={item.imageSrc[2].imageSrc.img1} className='!h-[60px] !w-[60px] rounded-full' alt="" />
-                    </div>
-                    <div>
-                      <p className="text-gray-500 mt-4 text-center mb-4 font-bold">{item.name[2].name}</p>
-                    </div>
-                    <p className="text-gray-500 mt-4 text-center mb-4">{item.contents[2].content}</p>
-                  </div>
-                  <div className=' flex items-center justify-center my-2'>
-                    ⭐ ⭐ ⭐ ⭐ ⭐
-                  </div>
+                <div className=' flex items-center justify-center my-2'>
+                  ⭐ ⭐ ⭐ ⭐ ⭐
                 </div>
               </div>
-            ))}
-          </Carousel>
+            </div>
+            <div className="">
+              <div className="rounded-md m-2 border border-gray-500 h-auto w-[300px]">
+                <div className='p-6'>
+                  <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
+                    <img src={img1} className='!h-[60px] !w-[60px] rounded-full' alt="no" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 mt-4 text-center mb-4 font-bold">Rinku Sharma</p>
+                  </div>
+                  <p className="text-gray-500 mt-4 text-center mb-4">Outstanding IT services! Blue Soltech transformed our outdated systems into a seamless digital infrastructure. Their expertise and dedication are unmatched.</p>
+                </div>
+                <div className=' flex items-center justify-center my-2'>
+                  ⭐ ⭐ ⭐ ⭐ ⭐
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <div className="rounded-md m-2 border border-gray-500 h-auto w-[300px]">
+                <div className='p-6'>
+                  <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
+                    <img src={img1} className='!h-[60px] !w-[60px] rounded-full' alt="no" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 mt-4 text-center mb-4 font-bold">Rinku Sharma</p>
+                  </div>
+                  <p className="text-gray-500 mt-4 text-center mb-4">Outstanding IT services! Blue Soltech transformed our outdated systems into a seamless digital infrastructure. Their expertise and dedication are unmatched.</p>
+                </div>
+                <div className=' flex items-center justify-center my-2'>
+                  ⭐ ⭐ ⭐ ⭐ ⭐
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <div className="rounded-md m-2 border border-gray-500 h-auto w-[300px]">
+                <div className='p-6'>
+                  <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
+                    <img src={img1} className='!h-[60px] !w-[60px] rounded-full' alt="no" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 mt-4 text-center mb-4 font-bold">Rinku Sharma</p>
+                  </div>
+                  <p className="text-gray-500 mt-4 text-center mb-4">Outstanding IT services! Blue Soltech transformed our outdated systems into a seamless digital infrastructure. Their expertise and dedication are unmatched.</p>
+                </div>
+                <div className=' flex items-center justify-center my-2'>
+                  ⭐ ⭐ ⭐ ⭐ ⭐
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <div className="rounded-md m-2 border border-gray-500 h-auto w-[300px]">
+                <div className='p-6'>
+                  <div className='h-[60px] w-full flex items-center justify-center rounded-full'>
+                    <img src={img1} className='!h-[60px] !w-[60px] rounded-full' alt="no" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 mt-4 text-center mb-4 font-bold">Rinku Sharma</p>
+                  </div>
+                  <p className="text-gray-500 mt-4 text-center mb-4">Outstanding IT services! Blue Soltech transformed our outdated systems into a seamless digital infrastructure. Their expertise and dedication are unmatched.</p>
+                </div>
+                <div className=' flex items-center justify-center my-2'>
+                  ⭐ ⭐ ⭐ ⭐ ⭐
+                </div>
+              </div>
+            </div>
+
+          </Slider>
         </div>
         <Happy_client />
+
       </div>
     </div>
   )

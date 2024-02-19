@@ -37,27 +37,10 @@ const About = (index) => {
         <div className='bg-[#0F0E0E] p-20 items-center '>
             <div className='md:w-[80%] w-auto mt-4 mx-auto'>
                 <div className='item-center text-center'>
-                    <motion.div
-                        className="card"
-                        initial={{
-                            opacity: 0,
-                            // if odd index card, slide from right instead of left
-                            y: index % 2 === 0 ? -50 : 50,
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            y: 0, // Slide in to its original position
-                            transition: {
-                                duration: 1, // Animation duration
-                            },
-                        }}
-                        viewport={{ once: true }}
-                    >
-                        <h1 className='text-white font-black text-5xl'>Online Marketing Agency India</h1>
-                        <p className='text-gray-500 mt-10 justify-center text-center items-center'> We are one of the finest Web Development and Digital Marketing Company In India renowned for using the latest online marketing
-                            techniques and the most sophisticated tools that help your business get a digital edge. Beat your competitors and outshine the crowd
-                            with ‘RankOn Technologies’ by your side for all your Digital Marketing needs.</p>
-                    </motion.div>
+                    <h1 className='text-gray-300 font-black text-5xl'>Online Marketing Agency India</h1>
+                    <p className='text-gray-500 mt-10 justify-center text-center items-center'> We are one of the finest Web Development and Digital Marketing Company In India renowned for using the latest online marketing
+                        techniques and the most sophisticated tools that help your business get a digital edge. Beat your competitors and outshine the crowd
+                        with ‘Blue soltech’ by your side for all your Digital Marketing needs.</p>
                 </div>
                 <div className='md:flex flex-row mt-9 justify-around'>
                     <div className=''>
@@ -67,7 +50,7 @@ const About = (index) => {
                             <li>✔️ Search Engine Optimization</li>
                             <li>✔️ Content Marketing</li>
                         </ul>
-                        <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Request Free Audit!</button>
+                        <button className='bg-[#3B82F6] text-gray-300 font-bold py-2 px-4 rounded-md m-4'>Request Free Audit!</button>
                     </div>
                     <div className=''>
                         <ul className='text-gray-500'>
@@ -76,12 +59,12 @@ const About = (index) => {
                             <li>✔️ Logo Design</li>
                             <li>✔️ Pay-Per-Click (PPC)/Google Ads</li>
                         </ul>
-                        <button className='bg-white text-black font-bold py-2 px-4 rounded-md m-4'>Our Packages</button>
+                        <button className='bg-[#3B82F6] text-gray-300 font-bold py-2 px-4 rounded-md m-4'>Our Packages</button>
                     </div>
                 </div>
 
                 <div className=''>
-                    <h1 className='text-white text-4xl mt-4 font-bold'>About us </h1>
+                    <h1 className='text-gray-300 text-3xl mt-4 font-bold'>About us </h1>
                     <p className='text-gray-500 mt-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -105,7 +88,7 @@ const About = (index) => {
                     </div>
                 </div>
                 <div className=' mt-14'>
-                    <h1 className='text-center text-white font-bold text-4xl'>Our Website Development Services</h1>
+                    <h1 className='text-center text-gray-300 font-bold text-3xl'>Our Website Development Services</h1>
                     <p className='text-gray-500 text-center mt-8'> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -117,7 +100,7 @@ const About = (index) => {
                         electronic typesetting, remaining essentially u </p>
                 </div>
                 <div className=''>
-                    <h1 className='text-center text-white font-bold text-4xl mt-14'>Our Digital Marketing Services</h1>
+                    <h1 className='text-center text-gray-300 font-bold text-3xl mt-14'>Our Digital Marketing Services</h1>
                     <div className='md:flex flex-row mt-9 justify-around'>
                         <div className=''>
                             <img src={img1} className='' />
@@ -143,7 +126,7 @@ const About = (index) => {
                             electronic typesetting, remaining essentially u</p>
                     </div>
                 </div>
-                <div className='text-white mt-14'>
+                <div className='text-gray-300 mt-14'>
                     <motion.div
                         className="card"
                         initial={{
@@ -160,14 +143,14 @@ const About = (index) => {
                         }}
                         viewport={{ once: true }}
                     >
-                        <h1 className='text-center font-bold text-4xl'>Our Happy Clients</h1>
+                        <h1 className='text-center font-bold text-3xl'>Our Happy Clients</h1>
                     </motion.div>
                     <div className='w-auto h-[500px] bg-white mt-14'>
                         <img src="" alt='no_video' />
                     </div>
                 </div>
-                <div className='text-white mt-14'>
-                    <h1 className='text-center font-bold text-4xl'>Testimonial</h1>
+                <div className='text-gray-300 mt-14'>
+                    <h1 className='text-center font-bold text-3xl'>Testimonial</h1>
                     <Carousel showThumbs={false} showStatus={false} showArrows={false}>
                         {slides.map((slide, index) => (
                             <div key={index} className="p-8 rounded-md ">
@@ -178,8 +161,8 @@ const About = (index) => {
                         ))}
                     </Carousel>
                 </div>
-                <div className='text-white mt-14'>
-                    <h1 className='text-center font-bold text-4xl'>What Our Clients Say About Our Services?</h1>
+                <div className='text-gray-300 mt-14'>
+                    <h1 className='text-center font-bold text-3xl'>What Our Clients Say About Our Services?</h1>
                     <div className='md:flex md-flex-row justify-between mt-10'>
                         <div className='bg-white w-[400px] h-[346px] m-4'>
                             <img src='' alt='no_img' />

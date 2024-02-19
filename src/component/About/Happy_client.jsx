@@ -48,14 +48,14 @@ const Happy_client = () => {
     ]
     return (
         <div>
-            <div className='text-white mt-14 mx-auto'>
-                <h1 className='justify-center text-center font-bold text-4xl'>Our Happy Clients</h1>
+            <div className='text-gray-300 mt-14 mx-auto'>
+                <h1 className='justify-center text-gray-300 text-center font-bold text-2xl xl:text-4xl'>Our Happy Clients</h1>
                 <div className='flex flex-col xl:flex-row mt-4 md:mt-7 space-x-4 items-center justify-center'>
-                    <div className='bg-black w-[400px] h-[400px] m-2'>
-                        <Carousel showThumbs={false} showStatus={false} showArrows={false}>
+                    <div className='bg-black w-[100%] xl:w-[400px] h-fit xl:h-[400px] m-2'>
+                        <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>
                             {client1.map((client1, index) => (
-                                <div key={index} className=" rounded-md ">
-                                    <div className='bg-white h-[50px] rounded-md flex items-center justify-center'>
+                                <div key={index} className="rounded-md">
+                                    <div className='bg-gray-200 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
                                         <p className="text-black text-center font-bold">{client1.tittle}</p>
                                     </div>
                                     <div className='p-6'>
@@ -65,11 +65,11 @@ const Happy_client = () => {
                             ))}
                         </Carousel>
                     </div>
-                    <div className='bg-black w-[400px] h-[400px] m-2'>
-                        <Carousel showThumbs={false} showStatus={false} showArrows={false}>
+                    <div className='bg-black w-[100%] xl:w-[400px] h-fit xl:h-[400px] m-2'>
+                        <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>
                             {client2.map((client2, index) => (
-                                <div key={index} className=" rounded-md ">
-                                    <div className='bg-white h-[50px] rounded-md flex items-center justify-center'>
+                                <div key={index} className="rounded-md">
+                                    <div className='bg-gray-200 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
                                         <p className="text-black text-center font-bold">{client2.tittle}</p>
                                     </div>
                                     <div className='p-6'>
@@ -79,11 +79,11 @@ const Happy_client = () => {
                             ))}
                         </Carousel>
                     </div>
-                    <div className='bg-black w-[400px] h-[400px] m-2'>
-                        <Carousel showThumbs={false} showStatus={false} showArrows={false}>
+                    <div className='bg-black w-[100%] xl:w-[400px] h-fit xl:h-[400px] m-2'>
+                        <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>
                             {client3.map((client3, index) => (
-                                <div key={index} className=" rounded-md ">
-                                    <div className='bg-white h-[50px] rounded-md flex items-center justify-center'>
+                                <div key={index} className="rounded-md">
+                                    <div className='bg-gray-200 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
                                         <p className="text-black text-center font-bold">{client3.tittle}</p>
                                     </div>
                                     <div className='p-6'>

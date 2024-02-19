@@ -10,7 +10,7 @@ const Questions = ({ faqs }) => {
         setOpenIndex(openIndex === index ? null : index);
     };
     return (
-        <div className="bg-black mx-auto p-6">
+        <div className="bg-black mx-auto p-6 mt-10">
             {faqs.map((faq, index) => (
                 <div key={index} className="mb-4">
                     <div
@@ -18,7 +18,7 @@ const Questions = ({ faqs }) => {
                         onClick={() => toggleQuestion(index)}
                     >
                         {faq.question}
-                        <span className="h-6 w-6 flex items-center justify-center text-teal-500">
+                        <span className="h-6 w-6 flex items-center justify-center text-black">
                             {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
                         </span>
                     </div>

@@ -26,7 +26,7 @@ const Home = () => {
     <div className="bg-[#0F0E0E]">
       <div className="h-[95vh] flex flex-col items-center justify-evenly bg-[#0F0E0E] text-white">
         <p className="text-4xl leading-[60px] md:text-7xl text-center font-[poppins] md:leading-[110px]">
-          <div className="z-4 absolute w-[150px] h-[50px] border-white border-[1px] rounded-[100%] rotate-[-30deg] transition-all duration-300 hover:rotate-[30deg] "></div>
+          <div className="z-4 absolute w-[150px] h-[50px] border-white border-[1px] rounded-[100%] rotate-[-30deg] transition-all duration-300 hover:rotate-[30deg]"></div>
           We provide<br></br> IT Solutions for <br></br>your{" "}
           <span className="font-bold ">TASTE</span>
         </p>
@@ -34,7 +34,7 @@ const Home = () => {
           <Logoslider />
         </div>
       </div>
-      <div className="flex justify-center items-center  mb-8">
+      <div className="flex justify-center items-center mb-8">
         <div className="flex flex-col justify-center items-center md:w-[65%] 2xl:w-[65%] p-4">
           <div className="flex flex-col-reverse md:flex-row justify-between w-full">
             <div className="flex flex-col md:w-[50%] justify-around ">
