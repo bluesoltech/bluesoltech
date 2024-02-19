@@ -12,11 +12,10 @@ const Footer = () => {
   .0
   return (
     <footer className="px-4 divide-y bg-[#0F0E0E] text-white dark:text-gray-100 border-t-2">
-      <div className="container flex text-black flex-col justify-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0  ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 text-sm gap-3 lg:w-full ">
+      <div className="container flex text-black flex-col justify-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 text-sm gap-3 lg:w-full">
           <div className="space-y-3  m-3 p-3">
             <h3 className="tracki uppercase text-white font-bold inline-block">
-              {" "}
               Services
             </h3>
             <ul className="space-y-1">

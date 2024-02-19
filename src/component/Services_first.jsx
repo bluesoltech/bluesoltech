@@ -7,12 +7,12 @@ const Services_first = ({ imgSrc, btn_title, tittle, duration, features1, featur
                 <img src={imgSrc} className='' />
             </div>
             <div className='xl:w-[50%] w-full'>
-                <div class='xl:flex flex-row bg-white text-black w-[699px] h-[50px] justify-between items-center p-2 rounded-md'>
+                <div className='xl:flex flex-row bg-white text-black w-[699px] h-[50px] justify-between items-center p-2 rounded-md'>
                     <div>
-                        <p class='font-bold justify-center align-middle'>{btn_title}</p>
+                        <p className='font-bold justify-center align-middle'>{btn_title}</p>
                     </div>
                     <div>
-                        <button class='bg-black text-white font-bold py-2 px-4 rounded-md'>Apply Now</button>
+                        <button className='bg-black text-white font-bold py-2 px-4 rounded-md'>Apply Now</button>
                     </div>
                 </div>
                 <p className='items-start xl:items-end justify-start xl:justify-end text-gray-500 text-start xl:text-end m-2 text-[1.1rem] leading-7 '>{duration}</p>
@@ -20,7 +20,6 @@ const Services_first = ({ imgSrc, btn_title, tittle, duration, features1, featur
                 <p className='items-start xl:items-end justify-start xl:justify-end text-gray-500 text-start xl:text-end mt-4 text-[1.1rem] leading-7'>{features1}</p>
                 <p className='items-start xl:items-end justify-start xl:justify-end text-gray-500 text-start xl:text-end mt-4 text-[1.1rem] leading-7 '>{features2}</p>
                 <p className='items-start xl:items-end justify-start xl:justify-end text-gray-500 text-start xl:text-end mt-4 text-[1.1rem] leading-7 '>{features3}</p>
-
             </div>
         </div>
     )

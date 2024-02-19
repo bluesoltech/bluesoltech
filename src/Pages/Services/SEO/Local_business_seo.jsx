@@ -116,6 +116,7 @@ const Googel = [
 
 const Local_business_seo = () => {
   return (
+    <>
     <div className='bg-[#0F0E0E] p-20 items-center'>
       <div className='md:w-[80%] w-auto mt-4 mx-auto'>
         <Services_first
@@ -461,6 +462,7 @@ const Local_business_seo = () => {
         <Happy_client />
       </div>
     </div>
+    </>
   )
 }
 
