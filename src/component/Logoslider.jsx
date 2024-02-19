@@ -58,19 +58,19 @@ const Logoslider = () => {
         <FaAngular className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaHtml5 className="text-5xl text-white"/>
+        <FaHtml5 className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaCss3 className="text-5xl text-white"/>
+        <FaCss3 className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaVuejs className="text-5xl text-white"/>
+        <FaVuejs className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaGitAlt className="text-5xl text-white"/>
+        <FaGitAlt className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
-        <FaPython className="text-5xl text-white"/>
+        <FaPython className="text-5xl text-white" />
       </Slider.Slide>
       <Slider.Slide>
         <FaAws className="text-5xl text-white" />
