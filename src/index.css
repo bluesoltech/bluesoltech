@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 .slick-dots li button:before {
-    color: white;
+    color: gray;
   }
 
   .slick-dots li.slick-active button:before {
-    color:white !important;
+    color:gray !important;
 }
 li::marker {
-  color: white;
+  color: gray;
 }

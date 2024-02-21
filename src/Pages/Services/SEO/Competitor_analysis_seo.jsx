@@ -182,7 +182,7 @@ const Googel = [
 const Competitor_analysis_seo = () => {
   return (
     <>
-      <div className="bg-[#0F0E0E] p-20 items-center">
+      <div className="bg-[#0F0E0E] p-10 xl:p-20 items-center">
         <div className="md:w-[80%] w-auto mt-4 mx-auto">
           <Services_first
             imgSrc={img1}

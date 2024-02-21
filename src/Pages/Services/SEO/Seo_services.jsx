@@ -190,8 +190,8 @@ const Googel = [
 const Seo_services = () => {
   return (
     <>
-      <div className="bg-[#0F0E0E] p-20 items-center">
-        <div className="md:w-[80%] w-auto mt-4 mx-auto">
+      <div className="bg-[#0F0E0E] p-10 xl:p-20 items-center">
+        <div className="w-full xl:w-[80%]  mt-4 mx-auto">
           <Services_first
             imgSrc={img1}
             btn_title="The Best SEO Agency in India"
