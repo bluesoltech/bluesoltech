@@ -11,6 +11,22 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Happy_client from '../../../component/About/Happy_client';
 import Result from '../../../component/Result';
 import Slick from '../../../component/Slick';
+import local1 from '../../../assets/img/local1.png'
+import local2 from '../../../assets/img/local2.png'
+import local3 from '../../../assets/img/local3.png'
+import local4 from '../../../assets/img/local4.png'
+import local5 from '../../../assets/img/local5.jpg'
+import local6 from '../../../assets/img/local6.png'
+import local7 from '../../../assets/img/local7.png'
+import local8 from '../../../assets/img/local8.png'
+import { RiSeoLine } from "react-icons/ri";
+import { SiGooglemybusiness } from "react-icons/si";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { BiSolidBookContent } from "react-icons/bi";
+import { FaMapLocationDot,FaBrain  } from "react-icons/fa6";
+
+
+
 
 const faqs = [
   {
@@ -66,23 +82,18 @@ const faqs = [
 
     ]
   },
-
-
 ];
 
 const Local_business_seo = () => {
   return (
-    <div className='bg-[#0F0E0E] p-20 items-center'>
-      <div className='md:w-[80%] w-auto mt-4 mx-auto'>
+    <div className='bg-[#0F0E0E] p-10 xl:p-20 items-center'>
+      <div className='w-full md:w-[80%]  mt-4 mx-auto'>
         <Services_first
-          imgSrc={img1}
+          imgSrc={local4}
           btn_title="Local Business SEO Services"
-          title="SEO vs. PPC Advertising: Which Is"
           duration="Local SEO Company"
-          price="55555"
-          tittle="Local SEO Services Company In India"
-          features2="local business SEO strategy from RankON works like a magic for your local business and our local business SEO experts understand all the local SEO guidelines to rank your Business on top for its local searches."
-          features1="Local SEO Company in India- RankON Technologies offers Local Business SEO Services at very low prices. As a leading local SEO service provider in India, our team at RankON has been helping local businesses to rank on the first page of Google on Google map and organic local search results for the past 8 years."
+          tittle="Local SEO Services In Blue soltech"
+          features1="Blue soltech company is the wordwide IT and software company which offer not only local services but also to "
         />
         <div className='flex items-center justify-center xl:mt-[120px] mt-[60px]'>
           <div className=' w-full'>
@@ -91,9 +102,9 @@ const Local_business_seo = () => {
             <Logoslider />
           </div>
         </div>
-        <div className='xl:flex flex-rowxl:mt-[120px] mt-[60px] justify-around'>
+        <div className='xl:flex flex-row xl:mt-[120px] mt-[60px] justify-around'>
           <div className='xl:w-[50%] w-full'>
-            <img src={img1} className='' />
+            <img src={local2} className='' />
           </div>
           <div className='xl:w-[50%] w-full'>
             <h2 className='font-bold items-start xl:items-start justify-start xl:justify-start text-gray-300 text-3xl'>Affordable Local SEO Services</h2>
@@ -110,7 +121,7 @@ const Local_business_seo = () => {
             <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Local SEO is totally different from national or eCommerce SEO so always trust a Local SEO company for your Local SEO campaign.</p>
           </div>
           <div className='xl:w-[50%] w-full flex justify-end'>
-            <img src={img1} className='gap-10' />
+            <img src={local3} className='gap-10' />
           </div>
         </div>
         <div className='xl:mt-[120px] mt-[60px]'>
@@ -119,8 +130,8 @@ const Local_business_seo = () => {
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 text-sm justify-between mt-11'>
             <div className='w-[90%] xl:w-[400px] h-fit xl:h-[350px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-4 m-2'>
               <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white text-black">
-                  <FaUser size={24} />
+                <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-white text-black">
+                  <SiGooglemybusiness  size={35} />
                 </div>
               </div>
               <h1 className='text-gray-300 text-2xl mt-4 font-bold text-center'>Google My Business Setup</h1>
@@ -134,8 +145,8 @@ const Local_business_seo = () => {
             </div>
             <div className='w-[90%] xl:w-[400px] h-fit xl:h-[350px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-4 m-2'>
               <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white text-black">
-                  <FaUser size={24} />
+                <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-white text-black">
+                  <TbBrandGoogleAnalytics  size={35} />
                 </div>
 
               </div>
@@ -150,24 +161,23 @@ const Local_business_seo = () => {
             </div>
             <div className='w-[90%] xl:w-[400px] h-fit xl:h-[350px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-4 m-2'>
               <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white text-black">
-                  <FaUser size={24} />
+                <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-white text-black">
+                  <BiSolidBookContent  size={35} />
                 </div>
 
               </div>
-              <h1 className='text-gray-300 text-2xl mt-4 font-bold text-center'>Google My Business Setup</h1>
+              <h1 className='text-gray-300 text-2xl mt-4 font-bold text-center'>Content Marketing</h1>
               <ul className='mt-6 text-gray-500 text-start px-14 text-[1.1rem] leading-7 list-disc'>
-                <li> NAP Syncing</li>
-                <li> Geotagging Photos</li>
-                <li> Business Description</li>
-                <li> Service Area</li>
-                <li> Business Category</li>
+                <li> Writing Keywords Optimized Content</li>
+                <li> Schema Markup</li>
+                <li> Local Backlink Opportunities</li>
+                <li> Optimizing The Landing Pages</li>
               </ul>
             </div>
             <div className='w-[90%] xl:w-[400px] h-fit xl:h-[350px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-4 m-2'>
               <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white text-black">
-                  <FaUser size={24} />
+                <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-white text-black">
+                  <RiSeoLine  size={35} />
                 </div>
 
               </div>
@@ -181,8 +191,8 @@ const Local_business_seo = () => {
             </div>
             <div className='w-[90%] xl:w-[400px] h-fit xl:h-[350px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-4 m-2'>
               <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white text-black">
-                  <FaUser size={24} />
+                <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-white text-black">
+                  <FaMapLocationDot size={35} />
                 </div>
 
               </div>
@@ -194,8 +204,8 @@ const Local_business_seo = () => {
             </div>
             <div className='w-[90%] xl:w-[400px] h-fit xl:h-[350px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-4 m-2'>
               <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white text-black">
-                  <FaUser size={24} />
+                <div className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-white text-black">
+                  <FaBrain  size={35} />
                 </div>
 
               </div>
@@ -215,26 +225,7 @@ const Local_business_seo = () => {
           <p className=' text-[1.1rem] leading-7 items-start xl:items-center justify-start xl:justify-end text-gray-500 text-start xl:text-center mt-7'>A Local SEO company can help make sure your website is optimized for local search results, making it more likely that potential customers in your area will find you. In addition to helping with search engine ranking, a Local SEO company can also help you create targeted content and ads that will reach consumers in your area.</p>
           <p className=' text-[1.1rem] leading-7 items-start xl:items-center justify-start xl:justify-end text-gray-500 text-start xl:text-center mt-7'>If you want your business to thrive, invest in Local SEO services. A reputable Local SEO company can help you achieve better visibility online, leading to more customers and more revenue for your business.</p>
         </div>
-        <div className='xl:flex flex-row xl:mt-[120px] mt-[60px] justify-around'>
-          <div className='xl:w-[50%] w-full'>
-            <img src={img1} className='' />
-          </div>
-          <div className='xl:w-[50%] w-full'>
-            <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Why Should You Hire A Local SEO Services Company?</h1>
-            <p className=' text-[1.1rem] leading-7  items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>A local SEO services company helps you to optimise your website and Google my business listing for better local rankings.</p>
-            <p className=' text-[1.1rem] leading-7  items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Our Local SEO Experts at RankON Technologies have been helping local businesses to get the first page rankings for the past 7 years.</p>
-            <p className=' text-[1.1rem] leading-7  items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>We understand all the local SEO guidelines to provide you with quick local search engine rankings for your business.</p>
-          </div>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>How Do We Optimize Your Local Business Website For Better Local SEO <br></br> Results?</h1>
-          <p className='text-[1.1rem]  items-start xl:items-center justify-start xl:justify-end text-gray-500 text-start xl:text-center mt-7 leading-7'>Our team of Local SEO consultants at RankON Technologies have been providing local SEO services for business for the past 7 years and we understand and create the best local business SEO strategy no matter if it’s Pigeons and Possums. We always follow local SEO guidelines to provide your local business with quick and long term growth.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>How Do We Optimize Your Local Business Website For Better Local SEO <br></br>Results?</h1>
-          <p className=' text-[1.1rem] leading-7  items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Our team of Local SEO consultants at Blue soltech have been providing local SEO services for business for the past 7 years and we understand and create the best local business SEO strategy no matter if it’s Pigeons and Possums. We always follow local SEO guidelines to provide your local business with quick and long term growth.</p>
-        </div>
-        <Result />
+
         <div className='xl:mt-[120px] mt-[60px]'>
           <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Our Local Business SEO Services Help You To Build</h1>
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 text-sm justify-between mt-11'>
@@ -264,96 +255,9 @@ const Local_business_seo = () => {
             </div>
           </div>
         </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl  xl:text-3xl mt-4 font-bold text-center'>Why Choose Our Local SEO Agency In India?</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Blue soltech is a team of expert Local Business SEO consultants who understand everything about Local SEO optimization. After 8 years of successful SEO industry experience, our SEO experts started RankON Technologies to help local businesses get the best Local SEO services at affordable prices.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>That’s why our SEO Packages are very affordable so every single business can afford them. Our SEO packages are affordable but it does not mean that we will compromise on quality. We always focus on quality and never do any low-quality work or use any shortcut to provide you with quick rankings. We use premium SEO tools for every process. Our SEO experts are friendly with keyword research tools, onpage SEO tools and other Technical SEO tools to optimize and rank websites.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Surprisingly, all such services come under a single, pocket-friendly local SEO service package and are enough to offer great outcomes in time.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl  xl:text-3xl mt-4 font-bold text-center'>How Does A Local SEO Company Help?</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>If you have a local business and want to rank on Google Maps and google first page rankings then you must follow the Local SEO guidelines to make your local business website optimized for better local searches. Here are a few Local SEO strategies that our Local SEO Experts follow to rank local businesses on the first page.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl  xl:text-3xl mt-4 font-bold text-center'>Google My Business Listing Optimization</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Google my business profile is a FREE service offered by Google. It helps you to set up a Google my business profile where you will be able to show your business details like Name, Phone, Address, business photos and social media profiles to your customers. You will also be able to post regular updates as you do on your social media channels to share updates regarding your business and offerings.</p>
-          <div className='w-[30%] h-[100%] border-gray-500 border-2 justify-center items-center text-center mx-auto m-2 overflow-hidden'>
-            <img src={img1} />
-          </div>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>You may have noticed Google’s three-pack listing during your search. if not then don’t worry. Basically, when you type any local keyword like digital marketing company near me then you may find some paid ads on the top and 3 Google listings below those Google ads results. Have a look at the below-given picture of a Google three-pack listing example.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Optimize Your Website For Better Local SEO</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Having a professional local business website is always a good asset that you can add to your business.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>You can hire Local SEO experts to optimize your website to rank higher in Google searches. A Local SEO professional will follow the search engine guidelines and make required changes to increase its local relevancy. Local SEO experts will do keyword research to find out the best local searches and optimize your website for those local keywords in your local SEO campaign.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Building Local Citations And Backlinks From Local Websites</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Offpage SEO or Link building should also be a part of your Local SEO campaign. In this process, your local SEO professionals will create backlinks from local publishers’ websites and also build local citations from local directories.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Local citations help you to rank on Google’s three-pack listing if done right and also help you to build a better local presence on websites like Yelp, Yellow pages, manta and similar local directories.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Your NAP details must be the same everywhere like website, Google my business listing and local directories for better NAP syndication.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Getting Reviews, Reply To The Reviews, And Answering Questions</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Now, when you have set up the Google my business profile then you must ask your customers to rate your services. You can also ask your customers to mention the services you have provided to them to make your reviews optimized for keywords.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>You can also reply to the customer’s reviews to let them know that you really care about your customers and business. Also, monitor the questions your customers ask in Google my business listing and try to answer them to make your listing active and helpful for Google users.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>What Are The Benefits Of Local SEO Services?</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>If you are new to SEO then asking why local SEO is important is obvious. Being a Local SEO company, we always guide our clients and answer every single question related to their SEO project.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>There are many benefits of Local SEO services for your business. Have a look at the below-given advantages of Local SEO services.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>It Helps You TO Drive Local Customers For Your Business</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>People trust local services providers for any services and when they search for any services or products then it’s Google’s Local SEO Algo that shows them the Google three-pack listing and the first page results to them.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Local SEO services help you get the top Google map ranking or Google three-pack listing so your potential users can easily find your business and contact you. This is how Local SEO services help you to increase your local customer base.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Local SEO Services Increase Your Website's Traffic</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>Local SEO services help your website rank and get all the traffic from local searches. Most of the time people don’t bother to visit Google’s second-page results so if your local business ranks on the first page then you will get those clicks and your website will get more exposure.</p>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>You can link your website to your Google my business listing. for more details, visit Google’s guide to set up Google my business profile.</p>
-        </div>
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Local SEO Helps You To Get More Conversions & Leads</h1>
-          <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-10'>As we stated in the previous point, you get more traffic when you rank on top of Google Maps and when people always like to hire Local services providers for their jobs. Local SEO results also look great and increase the chances of conversions. So these are the benefits of Local SEO services. </p>
-        </div>
+        
         <Video1 />
-        <div className='xl:mt-[120px] mt-[60px]'>
-          <h1 className='text-gray-300 text-2xl xl:text-3xl mt-4 font-bold text-center'>Local SEO Helps You To Get More Conversions & Leads</h1>
-          <div className='bg-white w-full h-[340px] m-10 rounded-sm mx-auto'>
-            <img src='' alt='no-video' />
-          </div>
-          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 text-sm justify-between mt-11 mx-auto'>
-            <div className='h-fit w-[90%] bg-black mx-auto m-3'>
-              <div className='bg-white w-[90%] h-[300px] rounded-sm mx-auto mt-2'>
-                <img src="" alt='no-video' />
-              </div>
-              <div className='m-5'>
-                <h1 className='text-gray-300 text-2xl mt-4 font-bold text-center'>White Hat SEO</h1>
-                <p className=' text-[1.1rem] leading-7 items-center xl:items-start  xl:justify-start text-gray-500 text-start xl:text-start mt-4 justify-center'>There are many SEO companies offering shortcuts to get quick results so you must be aware of their SEO strategies.</p>
-              </div>
-            </div>
-            <div className='h-fit w-[90%] bg-black mx-auto m-3'>
-              <div className='bg-white w-[90%] h-[300px] rounded-sm mx-auto mt-2'>
-                <img src="" alt='no-video' />
-              </div>
-              <div className='m-5'>
-                <h1 className='text-gray-300 text-2xl mt-4 font-bold text-center'>Proof Of Work And Rankings</h1>
-                <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-4'>A good local SEO company will show you the proof of their work and how did they help the client to get better results.</p>
-              </div>
-            </div>
-            <div className='h-fit w-[90%] bg-black mx-auto m-3'>
-              <div className='bg-white w-[90%] h-[300px] rounded-sm mx-auto mt-2'>
-                <img src="" alt='no-video' />
-              </div>
-              <div className='m-5'>
-                <h1 className='text-gray-300 text-2xl mt-4 font-bold text-center'>Pricing</h1>
-                <p className=' text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-start text-gray-500 text-start xl:text-start mt-4'>Budget is also a factor for you to make your Local SEO campaign fruitful. SEO takes time so you must hire affordable SEO service providers.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Request tittle="How Much Do Local SEO Cost?" content="Local SEO cost depends on many factors and there is no any fixed pricing for Local SEO services." />
+
         <div className='xl:mt-[120px] mt-[60px]'>
           <h1 className='text-gray-300 text-2xl  xl:text-3xl mt-4 font-bold text-center'>Frequently Asked Questions</h1>
           <Questions faqs={faqs} />
@@ -363,10 +267,9 @@ const Local_business_seo = () => {
           <Slick />
         </div>
         <Happy_client />
-
       </div>
     </div>
-    </>
+    
   )
 }
 

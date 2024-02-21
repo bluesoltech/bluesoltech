@@ -174,9 +174,9 @@ const Googel = [
       },
     ],
     imageSrc: [
-      { imageSrc: { img1 } },
-      { imageSrc: { img1 } },
-      { imageSrc: { img1 } },
+      { imageSrc:{img1} },
+      { imageSrc:{img1} },
+      { imageSrc:{img1} },
     ],
   },
 ];

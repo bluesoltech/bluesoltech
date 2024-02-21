@@ -55,7 +55,7 @@ const Happy_client = () => {
                         <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>
                             {client1.map((client1, index) => (
                                 <div key={index} className="rounded-md">
-                                    <div className='bg-gray-200 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
+                                    <div className='bg-gray-300 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
                                         <p className="text-black text-center font-bold">{client1.tittle}</p>
                                     </div>
                                     <div className='p-6'>
@@ -69,7 +69,7 @@ const Happy_client = () => {
                         <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>
                             {client2.map((client2, index) => (
                                 <div key={index} className="rounded-md">
-                                    <div className='bg-gray-200 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
+                                    <div className='bg-gray-300 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
                                         <p className="text-black text-center font-bold">{client2.tittle}</p>
                                     </div>
                                     <div className='p-6'>
@@ -83,7 +83,7 @@ const Happy_client = () => {
                         <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>
                             {client3.map((client3, index) => (
                                 <div key={index} className="rounded-md">
-                                    <div className='bg-gray-200 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
+                                    <div className='bg-gray-300 hover:bg-gray-300 h-[50px] rounded-t-md flex items-center justify-center'>
                                         <p className="text-black text-center font-bold">{client3.tittle}</p>
                                     </div>
                                     <div className='p-6'>

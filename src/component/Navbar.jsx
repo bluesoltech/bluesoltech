@@ -238,16 +238,21 @@ const Navbar = () => {
                     <ButtonToolbar className=" w-[100px] mr-4 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white">
                       <Dropdown title="Industries" placement="bottomStart" className="absolute w-[100px]">
                         <div className="bg-slate-50 text-black w-[200px] rounded-md p-3 mt-[9px] text-center">
+                        <Link to="/industries/hospital">
                           <Dropdown.Menu title="Hospital Marketing" className="top-[100px]">
+                            
                             <Link to="">
                               <Dropdown.Item className="bg-gray-300 rounded-md p-1">Hospital App Cost</Dropdown.Item>
                             </Link>
                           </Dropdown.Menu>
+                          </Link>
+                          <Link to="/industries/ecommerce">
                           <Dropdown.Menu title="Ecommerce Marketing" className="top-[100px]">
                             <Link to="">
                               <Dropdown.Item className="bg-gray-300 rounded-md p-1">Ecommerce SEO</Dropdown.Item>
                             </Link>
                           </Dropdown.Menu>
+                          </Link>
                           <Dropdown.Menu title="Dental Marketing" className="top-[100px]">
                             <Link to="">
                               <Dropdown.Item className="bg-gray-300 rounded-md p-1">Dental SEO</Dropdown.Item>
