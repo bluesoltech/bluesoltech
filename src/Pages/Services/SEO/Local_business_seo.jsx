@@ -366,7 +366,6 @@ const Local_business_seo = () => {
 
       </div>
     </div>
-    </>
   )
 }
 

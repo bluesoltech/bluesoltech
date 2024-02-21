@@ -12,7 +12,9 @@ import Reviews from "../Pages/About/Reviews";
 import Portfolio from "../component/About/Portfolio";
 import Degital_marketing from "../Pages/About/Degital_marketing";
 import Local_business_seo from "../Pages/Services/SEO/Local_business_seo";
-import Technical_seo from "../Pages/Services/SEO/Technical_seo";
+import GoogleAdds from "../Pages/Packages/PPC_Packages/GoogleAdds";
+import Local from "../Pages/Packages/SEO_Packages/Local";
+
 
 const Routers = () => {
   return (
@@ -28,8 +30,10 @@ const Routers = () => {
       <Route path="/career" element={<Career />} />
       <Route path="/reviews" element={<Reviews />} />
       <Route path="/degital_marketing" element={<Degital_marketing />} />
-      <Route path="local_business_seo" element={<Local_business_seo />} />
-      <Route path="technical_seo" element={<Technical_seo />} />
+      <Route path="/local_business_seo" element={<Local_business_seo />} />
+
+      <Route path="/googleadds" element={<GoogleAdds />} />
+      <Route path="/local" element={<Local />} />
     </Routes>
   );
 };
