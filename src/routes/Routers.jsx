@@ -25,6 +25,7 @@ import LawfirmsHomepage from "../Pages/Industries/LawFirm/Homepage"
 import DectorDMHomepage from "../Pages/Industries/DoctorDM/Homepage"
 import SmmHomepage from "../Pages/Packages/SMM_Packages/Homepage"
 import ORMPackages from "../Pages/Packages/ORMPackages";
+import LogoDesigning from "../Pages/Packages/LogoDesigning";
 
 const Routers = () => {
   return (
@@ -54,6 +55,7 @@ const Routers = () => {
       <Route path ="/Packages/SMM_Packages" element={<SmmHomepage/>}/>
       <Route path="/roofer_seo" element={<Roofer_seo/>} />
       <Route path="/ormpackages"element={<ORMPackages/>}/>
+      <Route path="logoDesigning" element={<LogoDesigning/>}/>
     </Routes>
   );
 };

@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Packages from '../../component/Packages';
+import Video1 from '../../component/Video1';
+import Happy_client from '../../component/About/Happy_client';
 
 const client1 = [
   {
@@ -133,7 +135,7 @@ const ORMPackages = () => {
         <div className='xl:mt-[120px] mt-[60px]'>
           <h1 className='font-bold items-start xl:items-start justify-start xl:justify-start text-center mb-10 text-gray-300 text-2xl xl:text-3xl'>Why Is Online Reputation Management Important?</h1>
           <div className='xl:flex flex-row justify-between items-start'>
-            <div className='xl:w-[50%] w-full flex justify-start'>
+            <div className='xl:w-[50%] w-full flex justify-center xl:justify-end'>
               <img src={img1} className='gap-10 w-full xl:w-[60%]' />
             </div>
             <div className='xl:w-[50%] w-full'>
@@ -154,7 +156,38 @@ const ORMPackages = () => {
             largeprice="20,000 INR/250 USDMonthly"
             largefeatures="WEBSITE REVIEW & ANALYSIS"
           />
+          <Video1 />
+          <div className='xl:mt-[120px] mt-[60px]'>
+            <h1 className='font-bold items-start xl:items-start justify-start xl:justify-start text-center mb-6 text-gray-300 text-2xl xl:text-3xl'>Latest Social Media Marketing Articles</h1>
+          </div>
+          <div className='xl:mt-[120px] mt-[60px]'>
+            <h1 className='font-bold items-start xl:items-start justify-start xl:justify-start text-center mb-6 text-gray-300 text-2xl xl:text-3xl'>Our Real Estate Digital Marketing Services In India Include</h1>
+            <p className='text-[1.1rem] leading-7 items-start xl:items-start justify-start xl:justify-center text-gray-500 text-start xl:text-start mt-10'>An IT company digital marketing agency is a specialized agency that provides digital marketing services to IT companies. These agencies have expertise in digital marketing channels, tactics, and strategies that are relevant to the IT industry.</p>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 text-sm justify-between mt-11 mx-auto'>
+              <div className='w-[90%] xl:w-[400px] h-fit xl:h-[570px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-6 m-2 rounded-lg flex flex-col justify-center items-center'>
+                <img src={img1} className='xl:w-[60%] !top-0' alt="Image" />
+                <h1 className='font-bold text-center text-gray-300 text-lg my-4'>Real Estate SEO Services</h1>
+                <p className="text-[1.1rem] leading-7 text-gray-500 text-center">
+                  Consider the company's overall marketing goals and objectives, such as increasing website traffic, generating leads, improving brand awareness, or increasing sales. These goals will help determine the scope and budget for the digital marketing campaign.
+                </p>
+              </div>
+              <div className='w-[90%] xl:w-[400px] h-fit xl:h-[570px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-6 m-2 rounded-lg flex flex-col justify-center items-center'>
+                <img src={img1} className='xl:w-[60%]' alt="Image" />
+                <h1 className='font-bold text-center text-gray-300 text-lg my-4'>Real Estate PPC Services</h1>
+                <p className="text-[1.1rem] leading-7 text-gray-500 text-center">
+                  Consider the company's overall marketing goals and objectives, such as increasing website traffic, generating leads, improving brand awareness, or increasing sales. These goals will help determine the scope and budget for the digital marketing campaign.
+                </p>
+              </div>
+              <div className='w-[90%] xl:w-[400px] h-fit xl:h-[570px] md:h-fit bg-black border-gray-500 mx-auto hover:border-2 p-6 m-2 rounded-lg flex flex-col justify-center items-center'>
+                <img src={img1} className='xl:w-[60%]' alt="Image" />
+                <h1 className='font-bold text-center text-gray-300 text-lg my-4'>Real Estate SMM Services</h1>
+                <p className="text-[1.1rem] leading-7 text-gray-500 text-center">
+                  As a general rule of thumb, a company should allocate around 7-12% of its total revenue towards marketing. However, this percentage may vary depending on the factors mentioned above. It is important to keep in mind that digital marketing is an ongoing process and requires continuous investment to maintain and improve results over time.</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <Happy_client/>
       </div>
     </div>
   )

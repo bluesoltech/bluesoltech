@@ -6,7 +6,6 @@ const Singal_slider = ({ clients }) => {
     return (
         <div>
             <div className='text-gray-300 mt-14 mx-auto'>
-                <h1 className='justify-center text-gray-300 text-center font-bold text-2xl xl:text-4xl'>Our Happy Clients</h1>
                 <div className='flex flex-col xl:flex-row mt-4 md:mt-7 space-x-4 items-center justify-center'>
                     <div className='bg-black w-[100%]  h-fit xl:h-[400px] m-2'>
                         <Carousel showThumbs={false} showStatus={false} showArrows={false} renderBottomCenterControls={() => null}>

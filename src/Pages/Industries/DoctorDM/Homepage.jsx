@@ -229,7 +229,6 @@ const Homepage = () => {
         <div className='xl:mt-[120px] mt-[60px]'>
           <h1 className='font-bold items-start xl:items-start justify-start xl:justify-start text-center mb-10 text-gray-300 text-2xl xl:text-3xl'>How To Hire The Best Digital Marketing Agency For Doctor's Digital Marketing Campaign</h1>
           <Singal_slider clients={clients}/>
-
         </div>
         <div className='xl:mt-[120px] mt-[60px]'>
           <h1 className='font-bold items-start xl:items-start justify-start xl:justify-start text-start mb-10 text-gray-300 text-3xl'>Factors That Affect The Cost Of IT Company Digital Marketing</h1>
