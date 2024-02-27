@@ -269,7 +269,6 @@ const Local_business_seo = () => {
         <Happy_client />
       </div>
     </div>
-    
   )
 }
 

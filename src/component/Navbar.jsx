@@ -181,8 +181,9 @@ const Navbar = () => {
                     <ButtonToolbar className=" w-[100px] mr-4 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white">
                       <Dropdown title="Packages" placement="bottomStart" className="absolute w-[100px]">
                         <div className="bg-slate-50 text-black w-[180px] rounded-md p-3 mt-[9px] text-center">
+                          <Link to="">
                           <Dropdown.Menu title="SEO PAckages" className="top-[100px]">
-                            <Link to="">
+                            <Link to="local">
                               <Dropdown.Item className="bg-gray-300 rounded-md p-1">Local SEO Packages</Dropdown.Item>
                             </Link>
                             <Link to="">
@@ -195,8 +196,9 @@ const Navbar = () => {
                               <Dropdown.Item className="bg-gray-300 rounded-md p-1">Technical SEO Packages</Dropdown.Item>
                             </Link>
                           </Dropdown.Menu>
+                          </Link>
                           <Dropdown.Menu title="PPC Packages" className="top-[100px]">
-                            <Link to="">
+                            <Link to="googleadds">
                               <Dropdown.Item className="bg-gray-300 rounded-md p-1">Google ads marketing</Dropdown.Item>
                             </Link>
                           </Dropdown.Menu>

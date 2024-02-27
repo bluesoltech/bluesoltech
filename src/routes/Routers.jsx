@@ -13,6 +13,7 @@ import Portfolio from "../component/About/Portfolio";
 import Degital_marketing from "../Pages/About/Degital_marketing";
 import Local_business_seo from "../Pages/Services/SEO/Local_business_seo";
 import Technical_seo from "../Pages/Services/SEO/Technical_seo";
+<<<<<<< HEAD
 import HospitalHomepage from "../Pages/Industries/Hospital/Homepage"
 import HomepageEcommerce from "../Pages/Industries/Ecommerce/Homepage"
 import ItmarketingHome from "../Pages/Industries/ITMarketing/Homepage"
@@ -26,6 +27,8 @@ import DectorDMHomepage from "../Pages/Industries/DoctorDM/Homepage"
 import SmmHomepage from "../Pages/Packages/SMM_Packages/Homepage"
 import ORMPackages from "../Pages/Packages/ORMPackages";
 import LogoDesigning from "../Pages/Packages/LogoDesigning";
+=======
+>>>>>>> 4a25fb91fa34b5f78db4126042884ac448a714e4
 
 const Routers = () => {
   return (
@@ -41,6 +44,7 @@ const Routers = () => {
       <Route path="/career" element={<Career />} />
       <Route path="/reviews" element={<Reviews />} />
       <Route path="/degital_marketing" element={<Degital_marketing />} />
+<<<<<<< HEAD
       <Route path="/local_business_seo" element={<Local_business_seo />} />
       <Route path="/technical_seo" element={<Technical_seo />} />
       <Route path="/industries/hospital" element={<HospitalHomepage />} />
@@ -56,6 +60,10 @@ const Routers = () => {
       <Route path="/roofer_seo" element={<Roofer_seo/>} />
       <Route path="/ormpackages"element={<ORMPackages/>}/>
       <Route path="logoDesigning" element={<LogoDesigning/>}/>
+=======
+      <Route path="local_business_seo" element={<Local_business_seo />} />
+      <Route path="technical_seo" element={<Technical_seo />} />
+>>>>>>> 4a25fb91fa34b5f78db4126042884ac448a714e4
     </Routes>
   );
 };
